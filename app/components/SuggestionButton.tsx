@@ -1,7 +1,6 @@
 "use client";
 import { Button } from "@headlessui/react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 
 export default function SuggestionButton({ text }: { text: string }) {
   const router = useRouter();

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Chatbox from "./components/Chatbox";
 import SuggestionRow from "./components/SuggestionRow";
 export default function Home() {

@@ -1,8 +1,6 @@
 "use client";
 import Textbubble from "@/app/components/Textbubble";
 import ReplyBubble from "@/app/components/Replybubble";
-import SuggestionRow from "@/app/components/SuggestionRow";
-import SuggestionButton from "@/app/components/SuggestionButton";
 import { useRouter } from "next/navigation";
 
 import { Button } from "@headlessui/react";
