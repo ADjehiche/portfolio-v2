@@ -29,7 +29,7 @@ export default function Chatbox() {
         "focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
       )}
     >
-      <div className="relative w-fit overflow-hidden whitespace-nowrap text-white md:text-2xl text-lg">
+      <div className="relative w-fit overflow-hidden whitespace-nowrap text-white md:text-xl font-mono text-lg">
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
