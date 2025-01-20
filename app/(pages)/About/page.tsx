@@ -1,11 +1,7 @@
 "use client";
 import Textbubble from "@/app/components/Textbubble";
 import ReplyBubble from "@/app/components/Replybubble";
-import { useRouter } from "next/navigation";
-
-import { Button } from "@headlessui/react";
 export default function About() {
-  const router = useRouter();
   return (
     <div className="flex flex-col h-screen bg-[#212121] justify-start md:w-full">
       <div className="flex flex-col items-end my-24">
