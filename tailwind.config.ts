@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,7 +12,22 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        typing: {
+          "0%": { width: "0%" },
+          "100%": { width: "100%" },
+        },
+        blink: {
+          "50%": { opacity: "0" },
+        },
+      },
+      animation: {
+        typing: "typing 4s steps(20, end) forwards",
+        blink: "blink 1s infinite",
+      },
     },
   },
   plugins: [],
-} satisfies Config;
+};
+
+export default config;
