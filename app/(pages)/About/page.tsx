@@ -1,9 +1,12 @@
 "use client";
 import Textbubble from "@/app/components/Textbubble";
 import ReplyBubble from "@/app/components/Replybubble";
+import SuggestionRow from "@/app/components/SuggestionRow";
+import Header from "@/app/components/Header";
 export default function About() {
   return (
-    <div className="flex flex-col h-screen bg-[#212121] justify-start md:w-full">
+    <div className="flex flex-col min-h-screen bg-[#212121] justify-start md:w-full">
+      <Header />
       <div className="flex flex-col items-end my-24">
         <Textbubble text="Tell Me About Yourself?" />
       </div>

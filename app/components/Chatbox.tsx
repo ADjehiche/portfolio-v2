@@ -2,9 +2,12 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import clsx from "clsx";
+import { Button } from "@headlessui/react";
+import { useRouter } from "next/navigation";
 
 export default function Chatbox() {
   const text = "Message AcilGPT ";
+  const router = useRouter();
   const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
@@ -23,11 +26,9 @@ export default function Chatbox() {
   }, []);
 
   return (
-    <div
-      className={clsx(
-        "mt-3 block md:w-2/3 w-full mx-auto rounded-3xl border-none bg-[#2f2f2f] p-7 text-sm/6 text-white",
-        "focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
-      )}
+    <Button
+      onClick={() => router.push("/About")}
+      className="hover:scale-105 hover:text-white md:w-2/3 w-fit mx-auto bg-[#2f2f2f] duration-200 rounded-2xl border-[#2a2a2a] border-[1px] text-center p-7 text-sm/6 text-[#a1a1a1] focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
     >
       <div className="relative w-fit overflow-hidden whitespace-nowrap text-white md:text-xl font-mono text-lg">
         <motion.span
@@ -45,6 +46,6 @@ export default function Chatbox() {
           className="border-r-4 border-white mr-2"
         ></motion.span>
       </div>
-    </div>
+    </Button>
   );
 }

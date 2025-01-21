@@ -8,7 +8,7 @@ export default function Textbubble({ text }: { text: string }) {
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
-        className="max-w-xs p-3 bg-[#303030] rounded-2xl text-white self-end md:mx-5 ml-auto "
+        className="max-w-xs p-3 bg-[#303030] rounded-t-xl rounded-bl-xl text-white self-end md:mx-5 ml-auto "
       >
         {text}
       </motion.div>
